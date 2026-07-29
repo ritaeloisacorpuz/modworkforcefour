@@ -1,0 +1,13 @@
+# MOD - Maid-on-Demand
+
+> Professional on-call cleaning services designed for modern families, busy professionals, and seniors.
+
+## Primary Pages
+- [Home](https://www.modworkforce.com/index.html): Service overview, core benefits, promos, and booking details.
+- [Services](https://www.modworkforce.com/services.html): Complete breakdown of cleaning service packages.
+
+## Company Details
+- Service Name: MOD - Maid-on-Demand
+- Email: modworkforce@hawthorneconsultancymanila.com
+- Phone: 0956-400-1626
+- Website: https://www.modworkforce.com
