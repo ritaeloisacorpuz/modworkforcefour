@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>MOD Services - Maid On Demand | Cleaning Solutions</title>
+    <meta name="description" content="Explore MOD cleaning service options tailored for modern moms, busy professionals, seniors, and expats.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical Tag (Points to master index as instructed) -->
+    <link rel="canonical" href="https://www.modworkforce.com/index.html">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org Knowledge Graph / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Home Cleaning",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "MOD - Maid-on-Demand",
+        "url": "https://www.modworkforce.com/"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Dynamic Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Services Header / Offer -->
+    <section class="section-container">
+        <h2>What we offer</h2>
+        <p class="subtext">
+            Let us remove stress from your tresses, call and book us for our cleaning services.
+            We provide these cleaning services to give you more free time, allow you to have more rest, and save your energy for things that matter.
+        </p>
+        <a href="#" class="btn-secondary">Book our Services</a>
+    </section>
+
+    <!-- Detailed Services Breakdown -->
+    <section class="promos-section">
+        <div class="section-container" style="padding:0;">
+            <h2>MOD Services</h2>
+            <p class="subtext">
+                We want to take care of the mundane and menial work for you so that you can focus on what really matters — your family, your career, and your personal time.
+            </p>
+            
+            <div class="promos-grid">
+                <div class="promo-card">
+                    <img src="https://via.placeholder.com/150" alt="Standard Clean">
+                    <h4>Standard Cleaning</h4>
+                    <p>Routine home cleaning to keep your living space fresh and neat.</p>
+                </div>
+                <div class="promo-card">
+                    <img src="https://via.placeholder.com/150" alt="Deep Clean">
+                    <h4>Deep Cleaning</h4>
+                    <p>Thorough, intensive cleaning for appliances, corners, and hard-to-reach areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to Load Components -->
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(err => console.error('Error loading ' + file + ':', err));
+        }
+
+        loadComponent('header-placeholder', 'header.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
+</body>
+</html>
