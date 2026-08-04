@@ -291,3 +291,165 @@ a {
 .footer-contact-info p {
     margin-top: 10px;
 }
+/* ==========================================================================
+   ABOUT US & FAQS PAGE STYLES
+   ========================================================================== */
+
+/* Mission Grid */
+.mission-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mission-image {
+    flex: 0 0 320px;
+}
+
+.mission-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.mission-text {
+    flex: 1;
+    font-size: 13px;
+    color: #333333;
+    line-height: 1.7;
+}
+
+.mission-text p {
+    margin-bottom: 18px;
+}
+
+.signature-block {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #1e3a52;
+}
+
+.signature-img {
+    height: 45px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.signature-block strong {
+    display: block;
+    font-size: 13px;
+}
+
+/* Cleaners / Team Grid */
+.cleaners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cleaner-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cleaner-avatar-wrapper {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cleaner-avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cleaner-card h3 {
+    font-family: 'Georgia', serif;
+    color: #c09d62;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.cleaner-role {
+    font-size: 12px;
+    color: #555;
+    min-height: 32px;
+    margin-bottom: 20px;
+}
+
+.team-divider {
+    width: 40px;
+    height: 2px;
+    background-color: #d4bc82;
+    margin: 0 auto 10px auto;
+}
+
+.team-name {
+    font-size: 11px;
+    color: #777;
+}
+
+/* FAQ Layout */
+.faq-section {
+    background-color: #e0f7fa;
+    padding: 60px 10%;
+}
+
+.faq-header {
+    font-size: 32px;
+    color: #1e3a52;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid #b2ebf2;
+}
+
+.faq-question {
+    flex: 0 0 35%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e3a52;
+    padding-right: 20px;
+}
+
+.faq-answer {
+    flex: 0 0 60%;
+    font-size: 12px;
+    color: #1e3a52;
+    line-height: 1.6;
+}
+
+/* Responsive adjust for mobile */
+@media (max-width: 768px) {
+    .mission-grid, .cleaners-grid, .faq-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .faq-question, .faq-answer {
+        flex: 100%;
+    }
+    .faq-question {
+        margin-bottom: 10px;
+    }
+}
