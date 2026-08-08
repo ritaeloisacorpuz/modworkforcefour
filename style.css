@@ -852,3 +852,108 @@ a {
         padding: 15px;
     }
 }
+/* ==========================================================================
+   PROMOS & PACKAGES PAGE STYLES
+   ========================================================================== */
+
+/* Light Blue Hero Section with Intro Text */
+.promos-hero-section {
+    background-color: #e0f7fa;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.promos-hero-container {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.promos-hero-container h1 {
+    font-size: 38px;
+    font-weight: 300;
+    color: #1e3a52;
+    margin-bottom: 30px;
+}
+
+.promos-hero-container p {
+    font-size: 13px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.promos-hero-container p:last-child {
+    margin-bottom: 0;
+}
+
+/* Promos Item Grid Section */
+.promos-list-section {
+    background-color: #ffffff;
+    padding: 70px 8%;
+}
+
+.promos-list-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.promo-item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo-item-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-item-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e3a52;
+    margin-bottom: 12px;
+}
+
+.promo-desc {
+    font-size: 12px;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.promo-footnote {
+    font-size: 11px;
+    color: #666666;
+    line-height: 1.5;
+    margin-top: auto;
+}
+
+/* Responsive adjustments for mobile and tablets */
+@media (max-width: 850px) {
+    .promos-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .promos-hero-section {
+        padding: 40px 5%;
+    }
+    .promos-hero-container h1 {
+        font-size: 28px;
+    }
+    .promos-list-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}

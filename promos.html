@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Our Promos | MOD - Maid On Demand</title>
+    <meta name="description" content="Explore MOD's exclusive promos, discounts, freebies, and loyalty packages for cleaning services.">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.modworkforce.com/promos.html">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Header Placeholder (Pulls header.html) -->
+    <div id="header-placeholder"></div>
+
+    <!-- Promos Hero Intro Section -->
+    <section class="promos-hero-section">
+        <div class="promos-hero-container">
+            <h1>Our Promos</h1>
+            
+            <p>We offer instant rewards, freebies for accumulated points, exclusive discounts and special privileges for availing of our cleaning services.</p>
+            
+            <p>We extend these promos to you so that you will keep availing of our cleaning services that will give you more free time, allow you to have more rest and save your energy for things that truly matter to you.</p>
+            
+            <p>You may see below the roster of promos and packages we have for you. Stay tuned for new promos in the future as we keep on adding more value to our services.</p>
+            
+            <p>We have something for everyone --- for the MODern mom caring for her family, the ambitious bachelor building his fortune, the senior citizen enjoying her retirement and the busy expat with goals to hit in the Philippines.</p>
+            
+            <p>We even have special staff services for special celebrations and occasions that require hired help on short notice. Let us remove stress from your tresses, call and book us for our cleaning services.</p>
+        </div>
+    </section>
+
+    <!-- Promos Grid Section -->
+    <section class="promos-list-section">
+        <div class="promos-list-grid">
+            
+            <!-- Item 1: MODern Mom Package -->
+            <div class="promo-item-card">
+                <div class="promo-item-icon">🧹</div>
+                <h3>MODern Mom Package</h3>
+                <p class="promo-desc">Get 50% off on your 10th cleaning service or get a free cleaning service on the 20th cleaning service.</p>
+                <p class="promo-footnote">Discounts and freebies applicable to the same cost-item only.</p>
+            </div>
+
+            <!-- Item 2: Bachelor Bonus -->
+            <div class="promo-item-card">
+                <div class="promo-item-icon">🚗</div>
+                <h3>Bachelor Bonus</h3>
+                <p class="promo-desc">Get a free carwash after the 12th cleaning service with a minimum of Php 1,000 cleaning fee per appt.</p>
+                <p class="promo-footnote">Freebie excludes trucks, vans and buses.</p>
+            </div>
+
+            <!-- Item 3: Senior Special -->
+            <div class="promo-item-card">
+                <div class="promo-item-icon">🦯</div>
+                <h3>Senior Special</h3>
+                <p class="promo-desc">Free one (1) dozen of Biogesic tablets for every cleaning service with minimum cleaning fee of Php 1,000.</p>
+                <p class="promo-footnote">Freebie is instant reward given on the same cleaning appointment.</p>
+            </div>
+
+            <!-- Item 4: Expat Premium -->
+            <div class="promo-item-card">
+                <div class="promo-item-icon">🍾</div>
+                <h3>Expat Premium</h3>
+                <p class="promo-desc">Free one (1) bottle of vodka or wine on the 15th cleaning appointment with a minimum cleaning fee of Php 1,500 per booking.</p>
+                <p class="promo-footnote">Variable brand depending on points.</p>
+            </div>
+
+            <!-- Item 5: Gift of Love -->
+            <div class="promo-item-card">
+                <div class="promo-item-icon">🖤</div>
+                <h3>Gift of Love</h3>
+                <p class="promo-desc">Get 10% off if you buy pre-paid cleaning service gift certificates for at least six (6) cleaning appointments. Get 20% off if you buy pre-paid gift certificates for at least twelve (12) cleaning appointments.</p>
+            </div>
+
+            <!-- Item 6: Special Staff Services Points -->
+            <div class="promo-item-card">
+                <div class="promo-item-icon">📂</div>
+                <h3>Special Staff Services Points</h3>
+                <p class="promo-desc">Party or Kitchen Staff availments will receive rewards points exchangeable for a variety of benefits.</p>
+                <p class="promo-footnote">Depends on scope of services rendered and subject to approval on a case-to-case basis.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dynamic Footer Placeholder (Pulls footer.html) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to Load Components -->
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(err => console.error('Error loading ' + file + ':', err));
+        }
+
+        loadComponent('header-placeholder', 'header.html');
+        loadComponent('footer-placeholder', 'footer.html');
+    </script>
+</body>
+</html>
