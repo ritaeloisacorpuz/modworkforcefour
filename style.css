@@ -1171,3 +1171,48 @@ footer p {
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* Stack footer items vertically */
+footer {
+  display: block; /* Removes side-by-side forcing on main footer wrapper */
+  width: 100%;
+}
+
+/* Make top row 3 columns side-by-side */
+.footer-top-row,
+.footer-bottom-row {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Individual Column width */
+.footer-col {
+  flex: 1;
+}
+
+.footer-col p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Logo styling */
+.footer-logo-container {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.footer-logo {
+  max-width: 160px;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0 40px 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 20px;
+}
