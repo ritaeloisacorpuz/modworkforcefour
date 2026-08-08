@@ -453,3 +453,229 @@ a {
         margin-bottom: 10px;
     }
 }
+/* ==========================================================================
+   CLEANING APPOINTMENT BOOKING FORM STYLES
+   ========================================================================== */
+
+.booking-page-container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-main-title {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #1e3a52;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.booking-intro-text {
+    text-align: center;
+    font-size: 13px;
+    color: #555555;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    line-height: 1.6;
+}
+
+/* Yellow Card Container */
+.booking-form-card {
+    background-color: #ffffdd;
+    border-radius: 12px;
+    padding: 40px 35px;
+    color: #222222;
+}
+
+.form-header-title {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row-2col {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row-2col .form-group {
+    flex: 1;
+}
+
+.form-label {
+    display: block;
+    font-size: 11px;
+    color: #222222;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-sublabel {
+    display: block;
+    font-size: 11px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+/* Minimalist Bottom-Border Inputs */
+.form-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2.5px solid #000000;
+    background: transparent;
+    padding: 4px 0;
+    font-size: 14px;
+    outline: none;
+    color: #000000;
+}
+
+.form-select {
+    width: 100%;
+    border: none;
+    border-bottom: 2.5px solid #000000;
+    background: transparent;
+    padding: 4px 0;
+    font-size: 13px;
+    outline: none;
+    color: #000000;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+    background-size: 10px auto;
+}
+
+/* Checkbox & Radio Styles */
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox-label, .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    background-color: transparent;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.checkbox-label input[type="checkbox"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+}
+
+.radio-label input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.radio-label input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.form-divider {
+    border: none;
+    border-top: 2px solid #000000;
+    margin: 30px 0;
+}
+
+/* Preferred Dates Styles */
+.dates-section-title {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.form-option-block {
+    margin-bottom: 15px;
+}
+
+.option-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.date-time-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.date-time-grid .form-group {
+    flex: 1;
+}
+
+/* Submit Button */
+.form-submit-container {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.btn-booking-submit {
+    background-color: transparent;
+    border: 2px solid #000000;
+    padding: 10px 65px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-booking-submit:hover {
+    background-color: #000000;
+    color: #ffffdd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .form-row-2col, .date-time-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .booking-form-card {
+        padding: 25px 18px;
+    }
+}
