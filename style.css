@@ -987,3 +987,123 @@ a {
 html {
     scroll-behavior: smooth;
 }
+/* ==========================================================================
+   BROKER REWARDS PAGE ADDITIONAL STYLES
+   ========================================================================== */
+
+.page-container {
+    background-color: #eafaf9;
+    padding: 60px 20px 80px 20px;
+    color: #333333;
+}
+
+/* Intro Header & Paragraph Section */
+.intro-section {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 38px;
+    font-weight: 300;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.intro-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 16px;
+}
+
+/* PDF Download Button Styling */
+.download-container {
+    margin-top: 30px;
+}
+
+.btn-pdf-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e3a52;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-pdf-download:hover {
+    background-color: #152838;
+    color: #ffffff;
+}
+
+/* 3x2 Grid Layout */
+.grid-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+}
+
+.promo-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-icon {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+.promo-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 12px;
+}
+
+.promo-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+}
+
+.promo-card p a {
+    color: #2b2b2b;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .promo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .promo-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    
+    .page-title {
+        font-size: 28px;
+    }
+}
