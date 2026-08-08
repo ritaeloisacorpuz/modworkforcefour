@@ -679,3 +679,176 @@ a {
         padding: 25px 18px;
     }
 }
+/* ==========================================================================
+   UPDATED HERO LOGO & SUB-NAV BUTTON STYLES
+   ========================================================================== */
+
+/* Hero Logo Placement */
+.hero-logo-wrapper {
+    margin: 15px 0 5px 0;
+}
+
+.hero-logo {
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+
+/* Sub-Navigation Clickable Bar */
+.sub-nav-bar {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sub-Navigation Buttons Base Styling */
+.sub-nav-button {
+    flex: 1;
+    padding: 22px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Alternating Light Blue Button Color */
+.sub-nav-button.btn-light {
+    background-color: #b2ebf2;
+    color: #1e3a52;
+}
+
+.sub-nav-button.btn-light:hover {
+    background-color: #9cdde6;
+}
+
+/* Alternating Dark Blue Button Color */
+.sub-nav-button.btn-dark {
+    background-color: #1e3a52;
+    color: #ffffff;
+}
+
+.sub-nav-button.btn-dark:hover {
+    background-color: #274b68;
+}
+
+/* Mobile Responsiveness for Sub-Nav Buttons */
+@media (max-width: 768px) {
+    .sub-nav-bar {
+        flex-direction: column;
+    }
+    
+    .sub-nav-button {
+        padding: 15px;
+        width: 100%;
+    }
+}
+/* ==========================================================================
+   REVISED HERO SECTION & SUB-NAV BUTTON STYLES
+   ========================================================================== */
+
+/* Hero Section Layout (2-Column Desktop View) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    background-color: #ffffff;
+    min-height: 480px;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 45%;
+}
+
+.hero-logo-wrapper {
+    margin-bottom: 15px;
+}
+
+.hero-logo {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+/* Right Column: Pink Hand Image */
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-hand-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Clickable Sub Navigation Bar */
+.sub-nav-bar {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-nav-button {
+    flex: 1;
+    padding: 22px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Light Blue Button Style */
+.sub-nav-button.btn-light {
+    background-color: #b2ebf2;
+    color: #1e3a52;
+}
+
+.sub-nav-button.btn-light:hover {
+    background-color: #9cdde6;
+}
+
+/* Dark Blue Button Style */
+.sub-nav-button.btn-dark {
+    background-color: #1e3a52;
+    color: #ffffff;
+}
+
+.sub-nav-button.btn-dark:hover {
+    background-color: #274b68;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+    .hero-content, .hero-image-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    .sub-nav-bar {
+        flex-direction: column;
+    }
+    .sub-nav-button {
+        padding: 15px;
+    }
+}
