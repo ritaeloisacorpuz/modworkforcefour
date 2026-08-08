@@ -1112,3 +1112,62 @@ footer p {
   text-align: justify;
   hyphens: auto;
 }
+/* Center Logo */
+.footer-logo-container {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.footer-logo {
+  max-width: 160px; /* Adjust size to fit your logo */
+  height: auto;
+}
+
+/* Horizontal Line Separator */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0 40px 0;
+}
+
+/* Bottom Columns Grid */
+.footer-bottom-columns {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-bottom-columns .footer-col {
+  flex: 1;
+}
+
+.footer-bottom-columns p {
+  text-align: justify;
+  hyphens: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer-bottom-columns h4 {
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+/* Links & Copyright */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
