@@ -1,0 +1,351 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Appointment Booking Form</title>
+    <!-- Linked master style sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Script to pull Header and Footer dynamic components -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Placeholder for Pulled Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- MAIN BOOKING FORM CONTENT -->
+    <main class="booking-page-container">
+        
+        <h1 class="booking-main-title">Cleaning Appointment Booking Form</h1>
+        
+        <p class="booking-intro-text">
+            Get ready to have more time and rest !<br>
+            Input the details of your cleaning appointment in the form underneath and follow the payment instructions below the form. Make sure you notify us via Viber and mobile text message at 095-400-1626 to notify us when you have made the booking so we can check our e-mails immediately.
+        </p>
+
+        <!-- Form directing to admin inbox -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_KEY" method="POST" class="booking-form-card">
+            
+            <!-- Hidden field to explicitly set target recipient or subject -->
+            <input type="hidden" name="_to" value="admin@hawthorneconsultancymanila.com">
+            <input type="hidden" name="_subject" value="New Cleaning Appointment Booking Request">
+
+            <div class="form-header-title">Book a Cleaning Appointment Today !</div>
+
+            <!-- Name Fields -->
+            <div class="form-row-2col">
+                <div class="form-group">
+                    <label class="form-label">First name *</label>
+                    <input type="text" name="first_name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Last name *</label>
+                    <input type="text" name="last_name" class="form-input" required>
+                </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label class="form-label">Email *</label>
+                <input type="email" name="email" class="form-input" required>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+                <label class="form-label">Cellphone Number *</label>
+                <input type="tel" name="cellphone" class="form-input" required>
+            </div>
+
+            <!-- Service Checkboxes -->
+            <div class="form-group">
+                <label class="form-label">Indicate Type of Cleaning Service Requested *</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="service_type[]" value="Cleaning Lady"> Cleaning Lady
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="service_type[]" value="Cleaning Lady with Equipment"> Cleaning Lady with Equipment
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="service_type[]" value="Party Staff"> Party Staff
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="service_type[]" value="Private Chef or Kitchen Staff"> Private Chef or Kitchen Staff
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="service_type[]" value="Others"> Others
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-sublabel">If others, please explain</label>
+                <input type="text" name="others_explanation" class="form-input">
+            </div>
+
+            <hr class="form-divider">
+
+            <!-- Location Radio Buttons -->
+            <div class="form-group">
+                <label class="form-label">Location of site to be cleaned</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="Makati"> Makati
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="BGC"> BGC
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="Ortigas"> Ortigas
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="San Juan-Mandaluyong"> San Juan-Mandaluyong
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="Quezon City"> Quezon City
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="Manila-Pasay"> Manila-Pasay
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="location" value="Other areas"> Other areas
+                    </label>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label class="form-label">Complete Address of site to be cleaned *</label>
+                <input type="text" name="complete_address" class="form-input" required>
+            </div>
+
+            <!-- Size & Rooms -->
+            <div class="form-group">
+                <label class="form-label">Indicate size in square meters, the number of bathrooms and number of rooms *</label>
+                <input type="text" name="site_size_and_details" class="form-input" required>
+            </div>
+
+            <!-- Special Instructions -->
+            <div class="form-group">
+                <label class="form-label">Indicate special instructions</label>
+                <input type="text" name="special_instructions" class="form-input">
+            </div>
+
+            <hr class="form-divider">
+
+            <!-- Preferred Dates Section -->
+            <div class="form-group">
+                <p class="dates-section-title">
+                    Indicate five (5) preferred Cleaning dates with time below. We will match it with the Cleaning Lady's schedule and confirm through Viber and e-mail.
+                </p>
+            </div>
+
+            <!-- Option #1 -->
+            <div class="form-option-block">
+                <div class="option-title">Option #1</div>
+                <div class="date-time-grid">
+                    <div class="form-group">
+                        <label class="form-sublabel">Month</label>
+                        <select name="option1_month" class="form-select">
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Day</label>
+                        <input type="text" name="option1_day" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Year</label>
+                        <input type="text" name="option1_year" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Time</label>
+                        <input type="time" name="option1_time" class="form-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option #2 -->
+            <div class="form-option-block">
+                <div class="option-title">Option #2</div>
+                <div class="date-time-grid">
+                    <div class="form-group">
+                        <label class="form-sublabel">Month</label>
+                        <select name="option2_month" class="form-select">
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Day</label>
+                        <input type="text" name="option2_day" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Year</label>
+                        <input type="text" name="option2_year" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Time</label>
+                        <input type="time" name="option2_time" class="form-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option #3 -->
+            <div class="form-option-block">
+                <div class="option-title">Option #3</div>
+                <div class="date-time-grid">
+                    <div class="form-group">
+                        <label class="form-sublabel">Month</label>
+                        <select name="option3_month" class="form-select">
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Day</label>
+                        <input type="text" name="option3_day" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Year</label>
+                        <input type="text" name="option3_year" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Time</label>
+                        <input type="time" name="option3_time" class="form-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option #4 -->
+            <div class="form-option-block">
+                <div class="option-title">Option #4</div>
+                <div class="date-time-grid">
+                    <div class="form-group">
+                        <label class="form-sublabel">Month</label>
+                        <select name="option4_month" class="form-select">
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Day</label>
+                        <input type="text" name="option4_day" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Year</label>
+                        <input type="text" name="option4_year" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Time</label>
+                        <input type="time" name="option4_time" class="form-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option #5 -->
+            <div class="form-option-block">
+                <div class="option-title">Option #5</div>
+                <div class="date-time-grid">
+                    <div class="form-group">
+                        <label class="form-sublabel">Month</label>
+                        <select name="option5_month" class="form-select">
+                            <option value=""></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Day</label>
+                        <input type="text" name="option5_day" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Year</label>
+                        <input type="text" name="option5_year" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-sublabel">Time</label>
+                        <input type="time" name="option5_time" class="form-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit-container">
+                <button type="submit" class="btn-booking-submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Placeholder for Pulled Footer -->
+    <div id="footer-placeholder"></div>
+
+</body>
+</html>
