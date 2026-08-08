@@ -1107,3 +1107,8 @@ html {
         font-size: 28px;
     }
 }
+/* Justify footer paragraphs */
+footer p {
+  text-align: justify;
+  hyphens: auto;
+}
